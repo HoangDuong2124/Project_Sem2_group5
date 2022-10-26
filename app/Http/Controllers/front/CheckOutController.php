@@ -73,7 +73,7 @@ class CheckOutController extends Controller
                    ->join('all_category_doctor', 'all_book_appointment.doctor_id', '=', 'all_category_doctor.doctor_id')
                    ->join('users', 'all_book_appointment.user_id', '=', 'users.id')
                    ->select('all_book_appointment.*','all_category_doctor.img_doctor','all_category_doctor.name_doctor','all_category_doctor.hospital_doctor','users.name')
-                   ->where('user_id',Auth::user()->id)
+                   ->where('user_id',Auth::user()->id)->orderBy('created_at','desc')
                    ->get();
        return view('front.History_datkham')->with('show_history',$show_history);
     }
