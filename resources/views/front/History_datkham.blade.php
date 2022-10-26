@@ -161,7 +161,7 @@
                     Chi tiết lịch khám 
                 </button>
                     </div> -->
-                <div class="VN6h8+"><button style="background:orange;" class="stardust-button stardust-button--secondary book-again Kz9HeM"><a style="text-decoration: none;" href="/book-doctor">Đặt lại</a></button>
+                <div class="VN6h8+"><button style="background:orange;" class="stardust-button stardust-button--secondary book-again Kz9HeM"><a style="text-decoration: none;" href="/book-doctor/{{$show_history->doctor_id}}">Đặt lại</a></button>
                 </div>
             </div>
         </div>
